@@ -4,5 +4,5 @@
  */
 
 module.exports = {
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`],
 };

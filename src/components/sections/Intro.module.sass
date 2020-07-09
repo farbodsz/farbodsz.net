@@ -1,0 +1,22 @@
+@import "src/styles/colors"
+@import "src/styles/fonts"
+
+.Container
+  background: $color-primary
+  color: $text-color-white
+  padding: 128px 10% 256px 10%
+
+.Heading
+  margin: 48px 0
+  font-size: 96px
+  font-weight: 600
+
+.Body
+  color: $text-color-white-secondary
+  font-family: $fonts-code
+  font-size: 20px
+  font-weight: 700
+
+b
+  @extend .Body
+  color: $color-accent-light
