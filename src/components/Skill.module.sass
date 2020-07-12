@@ -17,9 +17,9 @@
   margin-bottom: 16px
   transition: filter $transition-duration ease-in-out
 
-.icon--inactive
-  // Grey
-  filter: grayscale(100%) brightness(50%)
+  &:not(:hover)
+    // Grey
+    filter: grayscale(100%) brightness(50%)
 
 .skill-name
   padding-bottom: 4px

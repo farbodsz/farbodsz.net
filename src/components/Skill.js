@@ -28,36 +28,12 @@ const icons = {
  *  - `duration` in years
  *  - `icon` filename (excluding extension)
  */
-export default class Skill extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isActive: false };
-  }
-
-  toggleIconActive() {
-    this.setState((currState) => ({
-      isActive: !currState.isActive,
-    }));
-  }
-
-  render() {
-    let iconStyles = styles.icon;
-    if (!this.state.isActive) {
-      iconStyles += " " + styles.iconInactive;
-    }
-
-    return (
-      <div className={styles.container}>
-        <img
-          src={icons[this.props.icon]}
-          alt={this.props.name}
-          className={iconStyles}
-          onMouseEnter={() => this.toggleIconActive()}
-          onMouseLeave={() => this.toggleIconActive()}
-        />
-        <p className={styles.skillName}>{this.props.name}</p>
-        <p className={styles.skillDuration}>{this.props.duration} yrs</p>
-      </div>
-    );
-  }
+export default function Skill(props) {
+  return (
+    <div className={styles.container}>
+      <img src={icons[props.icon]} alt={props.name} className={styles.icon} />
+      <p className={styles.skillName}>{props.name}</p>
+      <p className={styles.skillDuration}>{props.duration} yrs</p>
+    </div>
+  );
 }
