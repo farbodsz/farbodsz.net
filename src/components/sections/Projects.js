@@ -5,6 +5,7 @@ import Subheading from "../Subheading";
 import pokedataImg from "../../images/pokedata.png";
 import cpImg from "../../images/cp_markdown.png";
 import timetableImg from "../../images/timetable.png";
+import Layout from "../Layout";
 
 export default function Projects() {
   const timetableDesc = `Timetable is an app to help students manage their busy schedules.\\
@@ -26,28 +27,30 @@ export default function Projects() {
 
   return (
     <div className={styles.container}>
-      <Subheading text={"Projects"} />
-      <Project
-        name={"Timetable App"}
-        desc={timetableDesc}
-        stack={["Kotlin", "Java", "Android", "SQLite"]}
-        repo={"https://github.com/farbodsz/TimetableApp"}
-        img={timetableImg}
-      />
-      <Project
-        name={"cp-markdown"}
-        desc={cpMdDesc}
-        stack={["Python"]}
-        repo={"https://github.com/farbodsz/cp-markdown"}
-        img={cpImg}
-      />
-      <Project
-        name={"Pokédex App"}
-        desc={pokedexDesc}
-        stack={["Java", "Kotlin", "Android", "SQLite"]}
-        repo={"https://github.com/farbodsz/PokedexApp"}
-        img={pokedataImg}
-      />
+      <Layout>
+        <Subheading text={"Projects"} />
+        <Project
+          name={"Timetable App"}
+          desc={timetableDesc}
+          stack={["Kotlin", "Java", "Android", "SQLite"]}
+          repo={"https://github.com/farbodsz/TimetableApp"}
+          img={timetableImg}
+        />
+        <Project
+          name={"cp-markdown"}
+          desc={cpMdDesc}
+          stack={["Python"]}
+          repo={"https://github.com/farbodsz/cp-markdown"}
+          img={cpImg}
+        />
+        <Project
+          name={"Pokédex App"}
+          desc={pokedexDesc}
+          stack={["Java", "Kotlin", "Android", "SQLite"]}
+          repo={"https://github.com/farbodsz/PokedexApp"}
+          img={pokedataImg}
+        />
+      </Layout>
     </div>
   );
 }
