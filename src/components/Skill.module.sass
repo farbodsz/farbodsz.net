@@ -1,17 +1,18 @@
 @import "src/styles/colors"
 @import "src/styles/dimens"
 
-.container
-  $skill-item-width: 128px
-  $skill-item-spacing: 16px
+$skill-item-width: 96px
+$skill-item-width-small: 72px
+$skill-item-spacing: 16px
 
+.container
   margin: 24px ($skill-item-spacing / 2)
   height: 144px
   width: $skill-item-width
   text-align: center
 
 .icon
-  $size: 76px
+  $size: $skill-item-width - $skill-item-spacing
   width: $size
   height: $size
   margin-bottom: 16px
@@ -28,3 +29,9 @@
   color: $text-color-secondary
   font-size: 14px
   font-style: italic
+
+@media only screen and (max-width: $breakpoint-normal)
+  .icon
+    $size-small: $skill-item-width-small - $skill-item-spacing
+    width: $size-small
+    height: $size-small
