@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import TopBanner from "../components/sections/TopBanner";
 import Intro from "../components/sections/Intro";
 import Skills from "../components/sections/Skills";
 import Projects from "../components/sections/Projects";
@@ -30,6 +31,7 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
       </Helmet>
 
+      <TopBanner />
       <Intro />
       <Skills />
       <Projects />
