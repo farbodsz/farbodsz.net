@@ -9,7 +9,7 @@ export default function Header() {
       <a href="https://github.com/farbodsz/" target="_blank">
         <img className={styles.icon} src={iconGithub} alt={"GitHub"} />
       </a>
-      <a href="https://www.linkedin.com/" target="_blank">
+      <a href="https://www.linkedin.com/in/farbodsz/" target="_blank">
         <img className={styles.icon} src={iconLinkedIn} alt={"LinkedIn"} />
       </a>
     </header>
