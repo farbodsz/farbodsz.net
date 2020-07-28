@@ -10,7 +10,7 @@ export default function Intro() {
         <h1 className={intro.name}>Farbod Salamat-Zadeh</h1>
         <p className={intro.desc}>
           I'm a second year CS student at the{" "}
-          <a href={"https://warwick.ac.uk/"} target="_blank">
+          <a href={"https://warwick.ac.uk/"} target="_blank" rel="noreferrer">
             <b>University of Warwick</b>
           </a>
           .
