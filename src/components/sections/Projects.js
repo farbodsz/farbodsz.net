@@ -48,6 +48,7 @@ export default function Projects() {
           name={"RSA Website"}
           desc={rsaDesc}
           stack={["React", "JavaScript", "SASS"]}
+          project={"https://rsa-demo.netlify.app/"}
           repo={"https://github.com/shintaroonuma/rsa-project"}
           img={rsaImg}
         />
