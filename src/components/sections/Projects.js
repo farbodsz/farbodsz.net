@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./Projects.module.sass";
 import Project from "../Project";
 import Subheading from "../Subheading";
-import pokedataImg from "../../images/pokedata.png";
-import cpImg from "../../images/cp_markdown.png";
 import timetableImg from "../../images/timetable.png";
+import pokedataImg from "../../images/pokedata.png";
+import rsaImg from "../../images/rsa_website.png";
+import cpImg from "../../images/cp_markdown.png";
 import Layout from "../Layout";
 
 export default function Projects() {
@@ -25,6 +26,13 @@ export default function Projects() {
   This is helpful for those wanting to track their progress as they explore competitive programming or prepare for interviews.
   `;
 
+  const rsaDesc = `A website demonstrating RSA encryption, built with a React-driven technology stack.\\
+  Users can enter prime numbers to generate public and private keys, in order to encrypt their message.
+  Using the same keys, the ciphertext can be decypted to go back to the original plaintext.\\
+  The development of the website was a collaborative effort between a friend and I, in which we followed agile software development practices.
+  It posed interesting challenges such as calculating with large numbers in JS and handing states of "uncontrolled components" like input fields.
+  `;
+
   return (
     <div className={styles.container}>
       <Layout>
@@ -37,11 +45,11 @@ export default function Projects() {
           img={timetableImg}
         />
         <Project
-          name={"cp-markdown"}
-          desc={cpMdDesc}
-          stack={["Python"]}
-          repo={"https://github.com/farbodsz/cp-markdown"}
-          img={cpImg}
+          name={"RSA Website"}
+          desc={rsaDesc}
+          stack={["React", "JavaScript", "SASS"]}
+          repo={"https://github.com/shintaroonuma/rsa-project"}
+          img={rsaImg}
         />
         <Project
           name={"Pokédex App"}
@@ -49,6 +57,13 @@ export default function Projects() {
           stack={["Java", "Kotlin", "Android", "SQLite"]}
           repo={"https://github.com/farbodsz/PokedexApp"}
           img={pokedataImg}
+        />
+        <Project
+          name={"cp-markdown"}
+          desc={cpMdDesc}
+          stack={["Python"]}
+          repo={"https://github.com/farbodsz/cp-markdown"}
+          img={cpImg}
         />
       </Layout>
     </div>
