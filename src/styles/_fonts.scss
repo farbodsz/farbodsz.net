@@ -1,0 +1,19 @@
+/*
+ * Import fonts:
+ *  - Roboto (300, 400, 500, each with italic variants)
+ *  - Ubuntu (300, 400, 500, each with italic variants)
+ *  - Ubuntu Mono (400, 400 italic)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Ubuntu+Mono:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+// Font stacks
+$fonts-heading: "Ubuntu", sans-serif;
+$fonts-body: "Roboto", sans-serif;
+$fonts-code: "Ubuntu Mono", monospace;
+
+// Font weights
+$font-weight-heading: 500;
+$font-weight-body: 300;
+
+// Font sizes
+$font-size-body: 16pt;

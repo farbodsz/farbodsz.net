@@ -1,0 +1,56 @@
+@import "colors";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fonts-body;
+  font-weight: $font-weight-body;
+  font-size: $font-size-body;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+code {
+  font-family: $fonts-code;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fonts-heading;
+  font-weight: $font-weight-heading;
+}
+
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: $color-accent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  padding-top: 7px;
+}
+
+p,
+td {
+  font-size: 0.9em;
+}
+
+p {
+  // Indent lines 2+
+  $indent-size: 0.9em;
+  text-indent: -$indent-size;
+  margin-left: $indent-size;
+}
+
+b {
+  font-weight: $font-weight-heading;
+}

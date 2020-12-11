@@ -1,10 +1,7 @@
 import React from "react";
+
 import { Helmet } from "react-helmet";
-import Header from "../components/sections/Header";
-import Intro from "../components/sections/Intro";
-import Skills from "../components/sections/Skills";
-import Projects from "../components/sections/Projects";
-import Footer from "../components/sections/Footer";
+
 import favicon from "../icons/favicons/favicon.ico";
 import iconApple from "../icons/favicons/apple-touch-icon.png";
 import icon16 from "../icons/favicons/favicon-16x16.png";
@@ -31,11 +28,7 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
       </Helmet>
 
-      <Header />
-      <Intro />
-      <Skills />
-      <Projects />
-      <Footer />
+      <p>Hello World</p>
     </div>
   );
 }
