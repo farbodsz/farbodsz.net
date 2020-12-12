@@ -1,3 +1,5 @@
+@import "../styles/colors";
+
 .headerContainer {
   padding-bottom: 30px;
 }
@@ -21,4 +23,10 @@
 
 .iconText {
   font-size: 14px;
+
+  // Don't show in link color by default
+  color: $color-text;
+  &:hover {
+    color: $color-accent;
+  }
 }

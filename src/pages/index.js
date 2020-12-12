@@ -8,6 +8,7 @@ import icon16 from "../icons/favicons/favicon-16x16.png";
 import icon32 from "../icons/favicons/favicon-32x32.png";
 import Frame from "../components/Frame";
 import Header from "../components/Header";
+import Intro from "../components/Intro";
 
 export default function Home() {
   const NAME = "Farbod Salamat-Zadeh";
@@ -32,6 +33,7 @@ export default function Home() {
 
       <Frame>
         <Header />
+        <Intro />
       </Frame>
     </div>
   );

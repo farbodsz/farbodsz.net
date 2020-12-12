@@ -50,6 +50,7 @@ p {
   $indent-size: 0.9em;
   text-indent: -$indent-size;
   margin-left: $indent-size;
+  line-height: 1.5;
 }
 
 b {
@@ -58,10 +59,9 @@ b {
 
 a {
   text-decoration: none;
-  color: $color-text;
+  color: $color-accent;
 }
 
 a:hover {
   text-decoration: underline;
-  color: $color-accent;
 }
