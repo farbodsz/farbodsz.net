@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Helmet } from "react-helmet";
 
 import favicon from "../icons/favicons/favicon.ico";
@@ -9,6 +8,7 @@ import icon32 from "../icons/favicons/favicon-32x32.png";
 import Frame from "../components/Frame";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const NAME = "Farbod Salamat-Zadeh";
@@ -35,6 +35,7 @@ export default function Home() {
         <Header />
         <Intro />
       </Frame>
+      <Footer />
     </div>
   );
 }
