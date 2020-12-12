@@ -1,0 +1,24 @@
+.headerContainer {
+  padding-bottom: 30px;
+}
+
+.linksContainer {
+  padding: 8px 0;
+}
+
+.profileChip {
+  padding: 0 4px;
+}
+
+.icon {
+  $size: 16px;
+  width: $size;
+  height: $size;
+
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.iconText {
+  font-size: 14px;
+}
