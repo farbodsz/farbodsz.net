@@ -20,11 +20,8 @@ class ProfileChip extends React.Component {
 
   render() {
     return (
-      <a
+      <span
         className={styles.profileChip}
-        href={this.props.link}
-        target="_blank"
-        rel="noreferrer"
         onMouseEnter={() => this.setState({ active: true })}
         onMouseLeave={() => this.setState({ active: false })}
       >
@@ -33,8 +30,15 @@ class ProfileChip extends React.Component {
           src={this.state.active ? this.props.iconActive : this.props.icon}
           alt={this.props.text}
         />
-        <span className={styles.iconText}>{this.props.text}</span>
-      </a>
+        <a
+          className={styles.iconText}
+          href={this.props.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {this.props.text}
+        </a>
+      </span>
     );
   }
 }

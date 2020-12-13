@@ -53,8 +53,12 @@
   margin-right: $gap;
 
   font-size: $font-size-small;
+
   a {
     color: $color-accent;
+    &:hover:before {
+      visibility: hidden; // don't underline in buttons
+    }
   }
 
   border: 1px solid $color-accent;
