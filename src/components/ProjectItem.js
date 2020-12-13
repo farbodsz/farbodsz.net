@@ -93,27 +93,27 @@ export default function ProjectItem(props) {
       <img className={styles.img} src={props.imgSrc} />
     </div>
   );
+
   const description = (
     <div className={styles.description}>
+      <div className={styles.header}>
+        <h3>{props.title}</h3>
+        {subtitleElement}
+      </div>
       {props.children}
       <div className={styles.buttonContainer}>
         {linkButton} {githubButton}
       </div>
     </div>
   );
+
   const contentLeft = props.imgRight ? description : imgContainer;
   const contentRight = props.imgRight ? imgContainer : description;
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h3>{props.title}</h3>
-        {subtitleElement}
-      </div>
-      <div className={styles.contentContainer}>
-        {contentLeft}
-        {contentRight}
-      </div>
+      {contentLeft}
+      {contentRight}
     </div>
   );
 }

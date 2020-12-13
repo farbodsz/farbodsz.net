@@ -4,6 +4,7 @@
 
 .container {
   padding-bottom: 100px;
+  display: flex;
 }
 
 .header {
@@ -19,10 +20,6 @@
   font-style: italic;
   font-weight: $font-weight-heading;
   color: $color-text-lighter;
-}
-
-.contentContainer {
-  display: flex;
 }
 
 .imgContainer {
