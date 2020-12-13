@@ -1,6 +1,8 @@
+@import "../styles/dimens";
+
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
 
-  padding-bottom: 100px;
+  padding-bottom: $padding-section;
 }

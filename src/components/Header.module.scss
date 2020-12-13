@@ -1,8 +1,9 @@
 @import "../styles/colors";
+@import "../styles/dimens";
 @import "../styles/fonts";
 
 .headerContainer {
-  padding-bottom: 100px;
+  padding-bottom: $padding-section;
 }
 
 .linksContainer {
