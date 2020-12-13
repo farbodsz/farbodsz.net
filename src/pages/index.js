@@ -1,12 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
+import styles from "./index.module.scss";
+
 import Frame from "../components/Frame";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import ProjectItem from "../components/ProjectItem";
+import ListGroup from "../components/ListGroup";
 
 import favicon from "../icons/favicons/favicon.ico";
 import iconApple from "../icons/favicons/apple-touch-icon.png";
@@ -17,6 +20,33 @@ import pokedataImg from "../images/pokedata.png";
 import rsaWebsiteImg from "../images/rsa_website.png";
 import stockGameImg from "../images/stocks_game.png";
 import timetableImg from "../images/timetable.png";
+
+const SkillsSection = () => (
+  <Section title="Skills">
+    <div className={styles.skillsContainer}>
+      <ListGroup
+        groupName="Languages"
+        items={[
+          "Java",
+          "Kotlin",
+          "Python",
+          "C++",
+          "SQL",
+          "JavaScript",
+          "CSS/Sass",
+        ]}
+      />
+      <ListGroup
+        groupName="Frameworks"
+        items={["Android APIs", "React", "Gatsby", "Node"]}
+      />
+      <ListGroup
+        groupName="Tools"
+        items={["Maven & Gradle", "Bash", "Git & GitHub"]}
+      />
+    </div>
+  </Section>
+);
 
 export default function Home() {
   const NAME = "Farbod Salamat-Zadeh";
@@ -42,6 +72,8 @@ export default function Home() {
       <Frame>
         <Header />
         <Intro />
+
+        <SkillsSection />
 
         <Section title="Projects">
           <ProjectItem
