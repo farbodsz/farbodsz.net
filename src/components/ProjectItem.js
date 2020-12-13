@@ -50,6 +50,7 @@ function formatLangs(langs) {
  *  - img
  *  - github
  *  - link
+ *  - imgRight (0 = left, 1 = right)
  *  - children (the body)
  */
 export default function ProjectItem(props) {
@@ -87,6 +88,22 @@ export default function ProjectItem(props) {
     ""
   );
 
+  const imgContainer = (
+    <div className={styles.imgContainer}>
+      <img className={styles.img} src={props.imgSrc} />
+    </div>
+  );
+  const description = (
+    <div className={styles.description}>
+      {props.children}
+      <div className={styles.buttonContainer}>
+        {linkButton} {githubButton}
+      </div>
+    </div>
+  );
+  const contentLeft = props.imgRight ? description : imgContainer;
+  const contentRight = props.imgRight ? imgContainer : description;
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -94,15 +111,8 @@ export default function ProjectItem(props) {
         {subtitleElement}
       </div>
       <div className={styles.contentContainer}>
-        <div className={styles.imgContainer}>
-          <img className={styles.img} src={props.imgSrc} />
-        </div>
-        <div className={styles.description}>
-          {props.children}
-          <div className={styles.buttonContainer}>
-            {linkButton} {githubButton}
-          </div>
-        </div>
+        {contentLeft}
+        {contentRight}
       </div>
     </div>
   );

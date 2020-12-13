@@ -49,6 +49,7 @@ export default function Home() {
             endYear={2020}
             langs={["JavaScript", "React", "Python", "Django", "SCSS"]}
             imgSrc={stockGameImg}
+            imgRight={0}
             github="https://github.com/farbodsz/stock-app"
           >
             <p>
@@ -73,6 +74,7 @@ export default function Home() {
             endYear={2017}
             langs={["Kotlin", "Java", "Android", "SQLite"]}
             imgSrc={timetableImg}
+            imgRight={1}
             github="https://github.com/farbodsz/TimetableApp"
           >
             <p>
@@ -93,6 +95,7 @@ export default function Home() {
             endYear={2020}
             langs={["JavaScript", "React", "SASS"]}
             imgSrc={rsaWebsiteImg}
+            imgRight={0}
             github="https://github.com/shintaroonuma/rsa-project"
             link="https://rsa-demo.netlify.app"
           >
@@ -113,6 +116,7 @@ export default function Home() {
             endYear={2017}
             langs={["Java", "Kotlin", "Android", "SQLite"]}
             imgSrc={pokedataImg}
+            imgRight={1}
             github="https://github.com/farbodsz/PokedexApp"
           >
             <p>
