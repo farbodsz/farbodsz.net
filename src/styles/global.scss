@@ -46,11 +46,7 @@ td {
 }
 
 p {
-  // Indent lines 2+
-  $indent-size: 0.9em;
-  text-indent: -$indent-size;
-  margin-left: $indent-size;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 b {
