@@ -29,11 +29,15 @@ h5 {
 }
 
 h2 {
+  padding-bottom: 40px;
+  width: 100%;
+  text-align: center;
+
   font-size: 1em;
-  text-transform: uppercase;
   color: $color-accent;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
 }
 
 h4 {
