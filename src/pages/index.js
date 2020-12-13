@@ -48,6 +48,92 @@ const SkillsSection = () => (
   </Section>
 );
 
+const ProjectsSection = () => (
+  <Section title="Projects">
+    <ProjectItem
+      title="Stock Trading Game"
+      endYear={2020}
+      langs={["JavaScript", "React", "Python", "Django", "SCSS"]}
+      imgSrc={stockGameImg}
+      imgRight={0}
+      github="https://github.com/farbodsz/stock-app"
+    >
+      <p>
+        A stock trading game with a twist, built with a friend over the summer.
+      </p>
+      <p>
+        People invest in stocks to gain money. So we thought, what are the best
+        strategies to lose money on the stock exchange?
+      </p>
+      <p>
+        The stock trading game is a virtual stock trading platform where the
+        goal is to lose the most amount of money. Each investor starts with an
+        initial sum of one million dollars and can purchase stocks of their
+        choosing from the NASDAQ index.
+      </p>
+    </ProjectItem>
+
+    <ProjectItem
+      title="Student Timetable App"
+      startYear={2016}
+      endYear={2017}
+      langs={["Kotlin", "Java", "Android", "SQLite"]}
+      imgSrc={timetableImg}
+      imgRight={1}
+      github="https://github.com/farbodsz/TimetableApp"
+    >
+      <p>Timetable is an app to help students manage their busy schedules.</p>
+      <p>
+        For students always late to class, Timetable reminds you of your classes
+        X minutes before they start, configurable in Settings. Forgetful
+        students can keep on top of their assignments using the sorted list,
+        colour-coded by subject. Notifications are displayed for overdue or
+        incomplete assignments, and once you're done, you can swipe them off the
+        list.
+      </p>
+    </ProjectItem>
+
+    <ProjectItem
+      title="RSA Website"
+      endYear={2020}
+      langs={["JavaScript", "React", "SASS"]}
+      imgSrc={rsaWebsiteImg}
+      imgRight={0}
+      github="https://github.com/shintaroonuma/rsa-project"
+      link="https://rsa-demo.netlify.app"
+    >
+      <p>
+        A website demonstrating RSA encryption, built with a React-driven
+        technology stack.
+      </p>
+      <p>
+        Users can enter prime numbers to generate public and private keys, in
+        order to encrypt their message. Using the same keys, the ciphertext can
+        be decypted to go back to the original plaintext.
+      </p>
+    </ProjectItem>
+
+    <ProjectItem
+      title="Pokédex App"
+      startYear={2016}
+      endYear={2017}
+      langs={["Java", "Kotlin", "Android", "SQLite"]}
+      imgSrc={pokedataImg}
+      imgRight={1}
+      github="https://github.com/farbodsz/PokedexApp"
+    >
+      <p>
+        A database that Pokémon-enthusiasts can browse, filter, and search
+        through to find descriptions and stats of Pokémon.
+      </p>
+      <p>
+        The app uses a colourful, intuitive design and includes features like
+        being able to compare Pokémon side-by-side.
+      </p>
+    </ProjectItem>
+  </Section>
+);
+
 export default function Home() {
   const NAME = "Farbod Salamat-Zadeh";
   const DESC =
@@ -72,95 +158,8 @@ export default function Home() {
       <Frame>
         <Header />
         <Intro />
-
         <SkillsSection />
-
-        <Section title="Projects">
-          <ProjectItem
-            title="Stock Trading Game"
-            endYear={2020}
-            langs={["JavaScript", "React", "Python", "Django", "SCSS"]}
-            imgSrc={stockGameImg}
-            imgRight={0}
-            github="https://github.com/farbodsz/stock-app"
-          >
-            <p>
-              A stock trading game with a twist, built with a friend over the
-              summer.
-            </p>
-            <p>
-              People invest in stocks to gain money. So we thought, what are the
-              best strategies to lose money on the stock exchange?
-            </p>
-            <p>
-              The stock trading game is a virtual stock trading platform where
-              the goal is to lose the most amount of money. Each investor starts
-              with an initial sum of one million dollars and can purchase stocks
-              of their choosing from the NASDAQ index.
-            </p>
-          </ProjectItem>
-
-          <ProjectItem
-            title="Student Timetable App"
-            startYear={2016}
-            endYear={2017}
-            langs={["Kotlin", "Java", "Android", "SQLite"]}
-            imgSrc={timetableImg}
-            imgRight={1}
-            github="https://github.com/farbodsz/TimetableApp"
-          >
-            <p>
-              Timetable is an app to help students manage their busy schedules.
-            </p>
-            <p>
-              For students always late to class, Timetable reminds you of your
-              classes X minutes before they start, configurable in Settings.
-              Forgetful students can keep on top of their assignments using the
-              sorted list, colour-coded by subject. Notifications are displayed
-              for overdue or incomplete assignments, and once you're done, you
-              can swipe them off the list.
-            </p>
-          </ProjectItem>
-
-          <ProjectItem
-            title="RSA Website"
-            endYear={2020}
-            langs={["JavaScript", "React", "SASS"]}
-            imgSrc={rsaWebsiteImg}
-            imgRight={0}
-            github="https://github.com/shintaroonuma/rsa-project"
-            link="https://rsa-demo.netlify.app"
-          >
-            <p>
-              A website demonstrating RSA encryption, built with a React-driven
-              technology stack.
-            </p>
-            <p>
-              Users can enter prime numbers to generate public and private keys,
-              in order to encrypt their message. Using the same keys, the
-              ciphertext can be decypted to go back to the original plaintext.
-            </p>
-          </ProjectItem>
-
-          <ProjectItem
-            title="Pokédex App"
-            startYear={2016}
-            endYear={2017}
-            langs={["Java", "Kotlin", "Android", "SQLite"]}
-            imgSrc={pokedataImg}
-            imgRight={1}
-            github="https://github.com/farbodsz/PokedexApp"
-          >
-            <p>
-              A database that Pokémon-enthusiasts can browse, filter, and search
-              through to find descriptions and stats of Pokémon.
-            </p>
-            <p>
-              The app uses a colourful, intuitive design and includes features
-              like being able to compare Pokémon side-by-side.
-            </p>
-          </ProjectItem>
-        </Section>
+        <ProjectsSection />
       </Frame>
 
       <Footer />
