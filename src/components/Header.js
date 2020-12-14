@@ -28,6 +28,8 @@ class ProfileChip extends React.Component {
         className={styles.profileChip}
         onMouseEnter={() => this.setState({ active: true })}
         onMouseLeave={() => this.setState({ active: false })}
+        role="button"
+        tabIndex={this.props.index}
       >
         <img
           className={styles.profileIcon}
@@ -50,14 +52,20 @@ class ProfileChip extends React.Component {
 const Intro = () => (
   <div className={styles.introContainer}>
     <p className={styles.tagline}>
-      Hi, my name is Farbod. <span className={styles.wave}>👋</span>
+      Hi, my name is Farbod.{" "}
+      <span className={styles.wave} role="img" aria-label="wave">
+        👋
+      </span>
     </p>
     <p style={{ paddingBottom: "30px" }}>
       I'm currently a 2nd year Computer Science student at the{" "}
       <a href={LINK_WARWICK_DCS} target="_blank" rel="noreferrer">
         University of Warwick
       </a>
-      . <span className={styles.laptop}>💻</span>
+      .{" "}
+      <span className={styles.laptop} role="img" aria-label="laptop">
+        💻
+      </span>
     </p>
     <p>Welcome to my website!</p>
   </div>
@@ -74,6 +82,7 @@ export default function Header() {
             icon={iconGithub}
             iconActive={iconGithubActive}
             link={LINK_GITHUB}
+            index={0}
           />
           {" | "}
           <ProfileChip
@@ -81,6 +90,7 @@ export default function Header() {
             icon={iconSO}
             iconActive={iconSOActive}
             link={LINK_SO}
+            index={1}
           />
           {" | "}
           <ProfileChip
@@ -88,6 +98,7 @@ export default function Header() {
             icon={iconLinkedin}
             iconActive={iconLinkedinActive}
             link={LINK_LINKEDIN}
+            index={2}
           />
         </div>
         <Intro />
