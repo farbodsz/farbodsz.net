@@ -1,0 +1,22 @@
+[
+  {
+    "groupName": "Languages",
+    "items": [
+      "Java",
+      "Kotlin",
+      "Python",
+      "C++",
+      "SQL",
+      "JavaScript",
+      "CSS/Sass"
+    ]
+  },
+  {
+    "groupName": "Frameworks",
+    "items": ["Android APIs", "React", "Gatsby", "Node"]
+  },
+  {
+    "groupName": "Tools",
+    "items": ["Maven & Gradle", "Bash", "Git & GitHub"]
+  }
+]

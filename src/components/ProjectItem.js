@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./ProjectItem.module.scss";
 
+import Img from "gatsby-image";
+
 /**
  * Separator to use between years.
  *
@@ -47,7 +49,7 @@ function formatLangs(langs) {
  *  - startYear
  *  - endYear
  *  - langs (array)
- *  - img
+ *  - img (Gatsby fluid source)
  *  - github
  *  - link
  *  - imgRight (0 = left, 1 = right)
@@ -100,7 +102,7 @@ export default function ProjectItem(props) {
         props.imgRight ? styles.imgRightContainer : styles.imgLeftContainer
       }
     >
-      <img className={styles.img} src={props.imgSrc} />
+      <Img className={styles.img} fluid={props.imgSrc} />
     </div>
   ) : (
     ""
