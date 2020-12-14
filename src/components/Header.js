@@ -52,7 +52,7 @@ const Intro = () => (
     <p className={styles.tagline}>
       Hi, my name is Farbod. <span className={styles.wave}>👋</span>
     </p>
-    <p>
+    <p style={{ paddingBottom: "30px" }}>
       I'm currently a 2nd year Computer Science student at the{" "}
       <a href={LINK_WARWICK_DCS} target="_blank" rel="noreferrer">
         University of Warwick
