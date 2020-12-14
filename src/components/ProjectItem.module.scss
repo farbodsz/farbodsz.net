@@ -3,8 +3,10 @@
 @import "../styles/fonts";
 
 .container {
-  padding-bottom: $padding-section;
   display: flex;
+  flex-direction: row;
+
+  padding-bottom: $padding-section;
 }
 
 .header {
@@ -67,5 +69,15 @@
     a {
       color: $color-text-white;
     }
+  }
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    margin-bottom: 40px;
   }
 }

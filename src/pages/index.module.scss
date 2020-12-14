@@ -2,7 +2,14 @@
 
 .skillsContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 
   padding-bottom: $padding-section;
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  .skillsContainer {
+    flex-direction: column;
+  }
 }
