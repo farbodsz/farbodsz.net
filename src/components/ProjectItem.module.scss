@@ -42,11 +42,11 @@
 }
 
 .button {
-  display: inline;
+  display: inline-block;
 
   $gap: 16px;
   padding: ($gap / 2) $gap;
-  margin-right: $gap;
+  margin: 0 $gap $gap 0;
 
   font-size: $font-size-small;
 
