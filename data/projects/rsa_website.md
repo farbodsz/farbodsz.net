@@ -5,7 +5,7 @@ langs:
   - JavaScript
   - React
   - SASS
-imgSrc: ../../src/images/rsa_website.png
+imgSrc: ../images/rsa_website.png
 github: https://github.com/shintaroonuma/rsa-project
 link: https://rsa-demo.netlify.app
 featured: true

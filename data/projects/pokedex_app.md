@@ -7,7 +7,7 @@ langs:
   - Kotlin
   - Android
   - SQLite
-imgSrc: ../../src/images/pokedata.png
+imgSrc: ../images/pokedata.png
 github: https://github.com/farbodsz/PokedexApp
 featured: true
 ---

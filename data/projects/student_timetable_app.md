@@ -7,7 +7,7 @@ langs:
   - Java
   - Android
   - SQLite
-imgSrc: ../../src/images/timetable.png
+imgSrc: ../images/timetable.png
 github: https://github.com/farbodsz/TimetableApp
 featured: true
 ---

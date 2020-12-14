@@ -7,7 +7,7 @@ langs:
   - Python
   - Django
   - SCSS
-imgSrc: ../../src/images/stocks_game.png
+imgSrc: ../images/stocks_game.png
 github: https://github.com/farbodsz/stock-app
 featured: true
 ---
