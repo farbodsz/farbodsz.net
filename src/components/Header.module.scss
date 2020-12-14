@@ -56,7 +56,13 @@
 }
 
 .laptop {
+  display: inline-block;
   font-size: 1.3em;
+
+  &:hover {
+    animation-name: laptop-animation;
+    animation-duration: 0.5s;
+  }
 }
 
 @keyframes wave-animation {
@@ -74,5 +80,17 @@
   }
   50% {
     transform: rotate(10deg);
+  }
+}
+
+@keyframes laptop-animation {
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
   }
 }
