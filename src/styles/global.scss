@@ -61,6 +61,9 @@ b {
 a {
   $ul-transition: all $transition-duration cubic-bezier(1, 0.25, 0, 0.75) 0s;
 
+  // The link shouldn't be wrapped otherwise the transition doesn't work
+  display: inline-block;
+
   color: $color-accent;
   text-decoration: none;
 
