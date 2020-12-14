@@ -54,16 +54,22 @@ function formatLangs(langs) {
  *  - children (the body)
  */
 export default function ProjectItem(props) {
+  const miniItem = !props.imgSrc;
+
   const hasYears = props.startYear || props.endYear;
 
   const subtitleText = props.langs ? formatLangs(props.langs) : null;
   var subtitleElement = "";
 
   if (subtitleText || hasYears) {
+    const space = miniItem ? <br /> : " ";
+
     const yearsText = formatYears(props.startYear, props.endYear);
     subtitleElement = (
       <h4 className={styles.subtitle}>
-        {subtitleText} <span className={styles.years}>{yearsText}</span>
+        {subtitleText}
+        {space}
+        <span className={styles.years}>{yearsText}</span>
       </h4>
     );
   }
@@ -88,14 +94,16 @@ export default function ProjectItem(props) {
     ""
   );
 
-  const imgContainer = (
+  const imgContainer = !miniItem ? (
     <div className={styles.imgContainer}>
       <img className={styles.img} src={props.imgSrc} />
     </div>
+  ) : (
+    ""
   );
 
   const description = (
-    <div className={styles.description}>
+    <div className={miniItem ? styles.descriptionSmall : styles.description}>
       <div className={styles.header}>
         <h3>{props.title}</h3>
         {subtitleElement}
@@ -111,7 +119,7 @@ export default function ProjectItem(props) {
   const contentRight = props.imgRight ? imgContainer : description;
 
   return (
-    <div className={styles.container}>
+    <div className={miniItem ? styles.containerSmall : styles.container}>
       {contentLeft}
       {contentRight}
     </div>

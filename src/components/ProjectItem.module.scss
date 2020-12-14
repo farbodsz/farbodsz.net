@@ -9,6 +9,13 @@
   padding-bottom: $padding-section;
 }
 
+.containerSmall {
+  padding-bottom: 50px;
+
+  text-align: justify;
+  text-align-last: center;
+}
+
 .header {
   padding-bottom: 30px;
   align-items: center;
@@ -36,10 +43,17 @@
 
 .description {
   flex: 50%;
-
   p {
     padding-bottom: 30px;
     text-align: justify;
+  }
+}
+
+.descriptionSmall {
+  flex: 100%;
+  p {
+    padding-bottom: 30px;
+    text-align: center;
   }
 }
 

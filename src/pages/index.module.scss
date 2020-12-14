@@ -8,8 +8,25 @@
   padding-bottom: $padding-section;
 }
 
+.otherProjectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  & > * {
+    width: 45%;
+  }
+}
+
 @media (max-width: $breakpoint-width-mobile) {
   .skillsContainer {
     flex-direction: column;
+  }
+
+  .otherProjectsContainer {
+    flex-direction: column;
+    & > * {
+      width: auto;
+    }
   }
 }

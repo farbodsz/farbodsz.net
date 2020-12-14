@@ -20,7 +20,7 @@ import rsaWebsiteImg from "../images/rsa_website.png";
 import stockGameImg from "../images/stocks_game.png";
 import timetableImg from "../images/timetable.png";
 
-const SkillsSection = () => (
+const Skills = () => (
   <Section title="Skills">
     <div className={styles.skillsContainer}>
       <ListGroup
@@ -47,8 +47,8 @@ const SkillsSection = () => (
   </Section>
 );
 
-const ProjectsSection = () => (
-  <Section title="Projects">
+const FeaturedProjects = () => (
+  <Section title="Featured Projects">
     <ProjectItem
       title="Stock Trading Game"
       endYear={2020}
@@ -133,6 +133,63 @@ const ProjectsSection = () => (
   </Section>
 );
 
+const OtherProjects = () => (
+  <Section title="Other Projects">
+    <div className={styles.otherProjectsContainer}>
+      <ProjectItem
+        title="Music Database Project"
+        startYear={2019}
+        langs={["Kotlin", "MySQL"]}
+      >
+        <p>
+          A website for easily searching classical music by composer, time
+          period, or even instrumentation. The music metadata is collected using
+          a web crawler.
+        </p>
+      </ProjectItem>
+
+      <ProjectItem title="Codeforces CLI" startYear={2020} langs={["Python"]}>
+        <p>
+          A command-line interface to access stats from{" "}
+          <a href="https://codeforces.com/">Codeforces</a>.
+        </p>
+      </ProjectItem>
+
+      <ProjectItem
+        title="Family Tree App"
+        endYear={2017}
+        langs={["Java", "Android"]}
+      >
+        <p>An Android app for creating and exploring your family tree.</p>
+      </ProjectItem>
+
+      <ProjectItem
+        title="UsefulViews Library"
+        startYear={2015}
+        endYear={2016}
+        langs={["Java", "Android"]}
+        github="https://github.com/farbodsz/UsefulViews"
+      >
+        <p>
+          Useful widgets for Android including <code>LabelledSpinner</code>, a
+          Spinner with a floating label, inspired by material design guidelines.
+        </p>
+        <p>
+          See{" "}
+          <a href="http://stackoverflow.com/questions/31625620/floating-label-spinner">
+            this question
+          </a>{" "}
+          on Stack Overflow, and{" "}
+          <a href="http://stackoverflow.com/questions/31001991/how-to-customize-a-spinner-with-floating-text">
+            another similar question
+          </a>{" "}
+          for context.
+        </p>
+      </ProjectItem>
+    </div>
+  </Section>
+);
+
 export default function Home() {
   const NAME = "Farbod Salamat-Zadeh";
   const DESC =
@@ -157,8 +214,9 @@ export default function Home() {
       <Header />
 
       <Layout>
-        <SkillsSection />
-        <ProjectsSection />
+        <Skills />
+        <FeaturedProjects />
+        <OtherProjects />
       </Layout>
 
       <Footer />
