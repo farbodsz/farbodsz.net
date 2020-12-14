@@ -5,7 +5,6 @@ import styles from "./index.module.scss";
 
 import Frame from "../components/Frame";
 import Header from "../components/Header";
-import Intro from "../components/Intro";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import ProjectItem from "../components/ProjectItem";
@@ -157,7 +156,6 @@ export default function Home() {
 
       <Frame>
         <Header />
-        <Intro />
         <SkillsSection />
         <ProjectsSection />
       </Frame>

@@ -12,6 +12,8 @@ const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
 const LINK_LINKEDIN = "https://www.linkedin.com/in/farbodsz/";
 
+const LINK_WARWICK_DCS = "https://warwick.ac.uk/fac/sci/dcs/";
+
 class ProfileChip extends React.Component {
   constructor(props) {
     super(props);
@@ -26,12 +28,12 @@ class ProfileChip extends React.Component {
         onMouseLeave={() => this.setState({ active: false })}
       >
         <img
-          className={styles.icon}
+          className={styles.profileIcon}
           src={this.state.active ? this.props.iconActive : this.props.icon}
           alt={this.props.text}
         />
         <a
-          className={styles.iconText}
+          className={styles.profileLabel}
           href={this.props.link}
           target="_blank"
           rel="noreferrer"
@@ -42,6 +44,22 @@ class ProfileChip extends React.Component {
     );
   }
 }
+
+const Intro = () => (
+  <div className={styles.introContainer}>
+    <p className={styles.tagline}>
+      Hi, my name is Farbod. <span className={styles.wave}>👋</span>
+    </p>
+    <p>
+      I'm currently a 2nd year Computer Science student at the{" "}
+      <a href={LINK_WARWICK_DCS} target="_blank" rel="noreferrer">
+        University of Warwick
+      </a>
+      . <span className={styles.laptop}>💻</span>
+    </p>
+    <p>Welcome to my website!</p>
+  </div>
+);
 
 export default function Header() {
   return (
@@ -69,6 +87,7 @@ export default function Header() {
           link={LINK_LINKEDIN}
         />
       </div>
+      <Intro />
     </header>
   );
 }
