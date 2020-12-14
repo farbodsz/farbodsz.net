@@ -97,11 +97,7 @@ export default function ProjectItem(props) {
   );
 
   const imgContainer = !miniItem ? (
-    <div
-      className={
-        props.imgRight ? styles.imgRightContainer : styles.imgLeftContainer
-      }
-    >
+    <div className={styles.imgContainer}>
       <Img className={styles.img} fluid={props.imgSrc} />
     </div>
   ) : (
@@ -121,13 +117,19 @@ export default function ProjectItem(props) {
     </div>
   );
 
-  const contentLeft = props.imgRight ? description : imgContainer;
-  const contentRight = props.imgRight ? imgContainer : description;
+  var containerClasses;
+  if (miniItem) {
+    containerClasses = styles.containerSmall;
+  } else if (props.imgRight) {
+    containerClasses = `${styles.container} ${styles.containerReverse}`;
+  } else {
+    containerClasses = styles.container;
+  }
 
   return (
-    <div className={miniItem ? styles.containerSmall : styles.container}>
-      {contentLeft}
-      {contentRight}
+    <div className={containerClasses}>
+      {imgContainer}
+      {description}
     </div>
   );
 }

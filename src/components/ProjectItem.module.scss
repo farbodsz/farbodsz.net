@@ -2,11 +2,27 @@
 @import "../styles/dimens";
 @import "../styles/fonts";
 
+$imgLateralPadding: 80px;
+
 .container {
   display: flex;
   flex-direction: row;
 
   padding-bottom: $padding-section;
+
+  // Image container should be first child
+  & > div:nth-child(1) {
+    padding-left: 0;
+    padding-right: $imgLateralPadding;
+  }
+}
+
+.containerReverse {
+  flex-direction: row-reverse;
+  & > div:nth-child(1) {
+    padding-left: $imgLateralPadding;
+    padding-right: 0;
+  }
 }
 
 .containerSmall {
@@ -31,21 +47,9 @@
   color: $color-text-lighter;
 }
 
-@mixin imgContainer {
+.imgContainer {
   flex: 50%;
   padding-top: 10px;
-}
-
-$imgLateralPadding: 100px;
-
-.imgLeftContainer {
-  @include imgContainer;
-  padding-right: $imgLateralPadding;
-}
-
-.imgRightContainer {
-  @include imgContainer;
-  padding-left: $imgLateralPadding;
 }
 
 .img {
@@ -99,8 +103,20 @@ $imgLateralPadding: 100px;
 }
 
 @media (max-width: $breakpoint-width-mobile) {
-  .container {
+  @mixin containerMobile {
     flex-direction: column;
+
+    & > div:nth-child(1) {
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .container {
+    @include containerMobile;
+  }
+
+  .containerReverse {
+    @include containerMobile;
   }
 
   .imgContainer {
