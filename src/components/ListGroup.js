@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./ListGroup.module.scss";
 
 /**
  * Props:
@@ -14,9 +15,9 @@ export default function ListGroup(props) {
   ));
 
   return (
-    <table>
+    <table className={styles.table}>
       <tr>
-        <td style={{ paddingRight: "10px" }}>
+        <td className={styles.groupName}>
           <b>{props.groupName}</b>
         </td>
         <td>{props.items[0]}</td>
