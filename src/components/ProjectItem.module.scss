@@ -31,9 +31,21 @@
   color: $color-text-lighter;
 }
 
-.imgContainer {
+@mixin imgContainer {
   flex: 50%;
-  padding: 10px 40px;
+  padding-top: 10px;
+}
+
+$imgLateralPadding: 100px;
+
+.imgLeftContainer {
+  @include imgContainer;
+  padding-right: $imgLateralPadding;
+}
+
+.imgRightContainer {
+  @include imgContainer;
+  padding-left: $imgLateralPadding;
 }
 
 .img {

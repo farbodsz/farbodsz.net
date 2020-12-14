@@ -95,7 +95,11 @@ export default function ProjectItem(props) {
   );
 
   const imgContainer = !miniItem ? (
-    <div className={styles.imgContainer}>
+    <div
+      className={
+        props.imgRight ? styles.imgRightContainer : styles.imgLeftContainer
+      }
+    >
       <img className={styles.img} src={props.imgSrc} />
     </div>
   ) : (

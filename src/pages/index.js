@@ -136,18 +136,6 @@ const FeaturedProjects = () => (
 const OtherProjects = () => (
   <Section title="Other Projects">
     <div className={styles.otherProjectsContainer}>
-      <ProjectItem
-        title="Music Database Project"
-        startYear={2019}
-        langs={["Kotlin", "MySQL"]}
-      >
-        <p>
-          A website for easily searching classical music by composer, time
-          period, or even instrumentation. The music metadata is collected using
-          a web crawler.
-        </p>
-      </ProjectItem>
-
       <ProjectItem title="Codeforces CLI" startYear={2020} langs={["Python"]}>
         <p>
           A command-line interface to access stats from{" "}
@@ -161,6 +149,17 @@ const OtherProjects = () => (
         langs={["Java", "Android"]}
       >
         <p>An Android app for creating and exploring your family tree.</p>
+      </ProjectItem>
+      <ProjectItem
+        title="Music Database Project"
+        startYear={2019}
+        langs={["Kotlin", "MySQL"]}
+      >
+        <p>
+          A website for easily searching classical music by composer, time
+          period, or even instrumentation. The music metadata is collected using
+          a web crawler.
+        </p>
       </ProjectItem>
 
       <ProjectItem
