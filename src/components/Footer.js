@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import Frame from "./Frame";
+import Layout from "./Layout";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Frame>
+      <Layout>
         <p className={styles.text}>
           Designed and developed by Farbod Salamat-Zadeh.
         </p>
@@ -15,7 +15,7 @@ export default function Footer() {
             View source code on GitHub.
           </a>
         </p>
-      </Frame>
+      </Layout>
     </footer>
   );
 }

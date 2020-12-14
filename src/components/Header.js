@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Header.module.scss";
 
+import Layout from "./Layout";
+
 import iconGithub from "../icons/github.svg";
 import iconSO from "../icons/so.svg";
 import iconLinkedin from "../icons/linkedin.svg";
@@ -64,30 +66,32 @@ const Intro = () => (
 export default function Header() {
   return (
     <header className={styles.headerContainer}>
-      <h1>Farbod Salamat-Zadeh</h1>
-      <div className={styles.linksContainer}>
-        <ProfileChip
-          text="GitHub"
-          icon={iconGithub}
-          iconActive={iconGithubActive}
-          link={LINK_GITHUB}
-        />
-        {" | "}
-        <ProfileChip
-          text="Stack Overflow"
-          icon={iconSO}
-          iconActive={iconSOActive}
-          link={LINK_SO}
-        />
-        {" | "}
-        <ProfileChip
-          text="LinkedIn"
-          icon={iconLinkedin}
-          iconActive={iconLinkedinActive}
-          link={LINK_LINKEDIN}
-        />
-      </div>
-      <Intro />
+      <Layout>
+        <h1>Farbod Salamat-Zadeh</h1>
+        <div className={styles.linksContainer}>
+          <ProfileChip
+            text="GitHub"
+            icon={iconGithub}
+            iconActive={iconGithubActive}
+            link={LINK_GITHUB}
+          />
+          {" | "}
+          <ProfileChip
+            text="Stack Overflow"
+            icon={iconSO}
+            iconActive={iconSOActive}
+            link={LINK_SO}
+          />
+          {" | "}
+          <ProfileChip
+            text="LinkedIn"
+            icon={iconLinkedin}
+            iconActive={iconLinkedinActive}
+            link={LINK_LINKEDIN}
+          />
+        </div>
+        <Intro />
+      </Layout>
     </header>
   );
 }

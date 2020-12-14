@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet";
 
 import styles from "./index.module.scss";
 
-import Frame from "../components/Frame";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import ProjectItem from "../components/ProjectItem";
 import ListGroup from "../components/ListGroup";
+import Layout from "../components/Layout";
 
 import favicon from "../icons/favicons/favicon.ico";
 import iconApple from "../icons/favicons/apple-touch-icon.png";
@@ -154,11 +154,12 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
       </Helmet>
 
-      <Frame>
-        <Header />
+      <Header />
+
+      <Layout>
         <SkillsSection />
         <ProjectsSection />
-      </Frame>
+      </Layout>
 
       <Footer />
     </div>
