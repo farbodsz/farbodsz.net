@@ -1,0 +1,16 @@
+@import "../styles/dimens";
+
+.groupName {
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+@media (max-width: $breakpoint-width) {
+  .table {
+    margin-bottom: 30px;
+  }
+
+  .groupName {
+    width: 45%;
+  }
+}

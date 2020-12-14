@@ -1,0 +1,20 @@
+@import "../styles/dimens";
+
+.otherProjectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & > * {
+    width: 45%;
+  }
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  .otherProjectsContainer {
+    flex-direction: column;
+    & > * {
+      width: auto;
+    }
+  }
+}

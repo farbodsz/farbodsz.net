@@ -5,26 +5,43 @@
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
-        start_url: "/",
-        background_color: "#0d47a1",
-        theme_color: "#0d47a1",
-        // Enables "Add to home-screen" prompt and disables browser UI
-        // (including back button), see:
-        // https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: "standalone",
-        icon: "src/icons/favicons/favicon-32x32.png",
-        // An optional attribute which provides support for CORS check.
-        // If you do not provide a crossOrigin option, it will skip CORS for
-        // manifest. Any invalid keyword or empty string defaults to `anonymous`
-        crossOrigin: `use-credentials`,
+        path: `${__dirname}/data/`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: `${__dirname}/data/projects/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/data/images/`,
+      },
+    },
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
+            },
+          },
+        ],
+      },
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
   ],
 };

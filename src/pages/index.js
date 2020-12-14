@@ -1,10 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Header from "../components/sections/Header";
-import Intro from "../components/sections/Intro";
-import Skills from "../components/sections/Skills";
-import Projects from "../components/sections/Projects";
-import Footer from "../components/sections/Footer";
+import { Fade } from "react-reveal";
+
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
+
+import Skills from "../sections/skills";
+import OtherProjects from "../sections/otherProjects";
+import FeaturedProjects from "../sections/featuredProjects";
+
 import favicon from "../icons/favicons/favicon.ico";
 import iconApple from "../icons/favicons/apple-touch-icon.png";
 import icon16 from "../icons/favicons/favicon-16x16.png";
@@ -32,9 +37,19 @@ export default function Home() {
       </Helmet>
 
       <Header />
-      <Intro />
-      <Skills />
-      <Projects />
+
+      <Layout>
+        <Fade>
+          <Skills />
+        </Fade>
+        <Fade>
+          <FeaturedProjects />
+        </Fade>
+        <Fade>
+          <OtherProjects />
+        </Fade>
+      </Layout>
+
       <Footer />
     </div>
   );

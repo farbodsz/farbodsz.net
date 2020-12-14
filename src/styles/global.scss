@@ -1,0 +1,92 @@
+@import "colors";
+@import "dimens";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fonts-body;
+  font-weight: $font-weight-body;
+  font-size: $font-size-body;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+code {
+  font-family: $fonts-code;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fonts-heading;
+  font-weight: $font-weight-heading;
+}
+
+h2 {
+  padding-bottom: 60px;
+  width: 100%;
+  text-align: center;
+
+  font-size: 1em;
+  color: $color-accent;
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  padding-top: 10px;
+  font-family: $fonts-code;
+}
+
+p,
+td {
+  font-size: 0.9em;
+}
+
+p {
+  line-height: 1.4;
+}
+
+b {
+  font-weight: $font-weight-heading;
+}
+
+a {
+  $ul-transition: all $transition-duration cubic-bezier(1, 0.25, 0, 0.75) 0s;
+
+  // The link shouldn't be wrapped otherwise the transition doesn't work
+  display: inline-block;
+
+  color: $color-accent;
+  text-decoration: none;
+
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+
+    background-color: $color-accent;
+
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: $ul-transition;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}

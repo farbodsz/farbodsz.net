@@ -1,0 +1,19 @@
+@import "src/styles/dimens";
+
+.layout {
+  max-width: $width-default;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+@media (max-width: $breakpoint-width) {
+  .layout {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  .layout {
+    padding: 20px 20px;
+  }
+}

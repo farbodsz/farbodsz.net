@@ -1,0 +1,125 @@
+@import "../styles/colors";
+@import "../styles/dimens";
+@import "../styles/fonts";
+
+$imgLateralPadding: 80px;
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: $padding-section;
+
+  // Image container should be first child
+  & > div:nth-child(1) {
+    padding-left: 0;
+    padding-right: $imgLateralPadding;
+  }
+}
+
+.containerReverse {
+  flex-direction: row-reverse;
+  & > div:nth-child(1) {
+    padding-left: $imgLateralPadding;
+    padding-right: 0;
+  }
+}
+
+.containerSmall {
+  padding-bottom: 50px;
+
+  text-align: justify;
+  text-align-last: center;
+}
+
+.header {
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 0.9em;
+}
+
+.years {
+  font-style: italic;
+  font-weight: $font-weight-heading;
+  color: $color-text-lighter;
+}
+
+.imgContainer {
+  flex: 50%;
+  padding-top: 10px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  flex: 50%;
+  p {
+    padding-bottom: 30px;
+    text-align: justify;
+  }
+}
+
+.descriptionSmall {
+  flex: 100%;
+  p {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.button {
+  display: inline-block;
+
+  $gap: 16px;
+  padding: ($gap / 2) $gap;
+  margin: 0 $gap $gap 0;
+
+  font-size: $font-size-small;
+
+  a {
+    color: $color-accent;
+    &:hover:before {
+      visibility: hidden; // don't underline in buttons
+    }
+  }
+
+  border: 1px solid $color-accent;
+  border-radius: 20px;
+
+  transition: all $transition-duration ease;
+
+  &:hover {
+    background: $color-accent;
+    a {
+      color: $color-text-white;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  @mixin containerMobile {
+    flex-direction: column;
+
+    & > div:nth-child(1) {
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .container {
+    @include containerMobile;
+  }
+
+  .containerReverse {
+    @include containerMobile;
+  }
+
+  .imgContainer {
+    margin-bottom: 40px;
+  }
+}
