@@ -3,7 +3,7 @@
 @import "../styles/fonts";
 
 .headerContainer {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .linksContainer {
@@ -37,6 +37,7 @@
 
 .introContainer {
   font-size: 1.2em;
+  padding-bottom: $padding-section;
 }
 
 .tagline {
