@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Fade } from "react-reveal";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -39,15 +38,9 @@ export default function Home() {
       <Header />
 
       <Layout>
-        <Fade>
-          <Skills />
-        </Fade>
-        <Fade>
-          <FeaturedProjects />
-        </Fade>
-        <Fade>
-          <OtherProjects />
-        </Fade>
+        <Skills />
+        <FeaturedProjects />
+        <OtherProjects />
       </Layout>
 
       <Footer />
