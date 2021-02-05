@@ -8,6 +8,7 @@ langs:
 imgSrc: ../images/rsa_website.png
 github: https://github.com/shintaroonuma/rsa-project
 link: https://rsa-demo.netlify.app
+linkText: View project
 featured: true
 ---
 

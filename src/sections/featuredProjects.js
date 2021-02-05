@@ -26,6 +26,7 @@ const query = graphql`
           }
           github
           link
+          linkText
         }
       }
     }
@@ -47,6 +48,7 @@ function renderProjects(data) {
       imgRight={idx % 2}
       github={node.frontmatter.github}
       link={node.frontmatter.link}
+      linkText={node.frontmatter.linkText}
     >
       <div dangerouslySetInnerHTML={{ __html: node.html }} />
     </ProjectItem>

@@ -52,6 +52,7 @@ function formatLangs(langs) {
  *  - img (Gatsby fluid source)
  *  - github
  *  - link
+ *  - linkText
  *  - imgRight (0 = left, 1 = right)
  *  - children (the body)
  */
@@ -89,7 +90,7 @@ export default function ProjectItem(props) {
   const linkButton = props.link ? (
     <div className={styles.button}>
       <a href={props.link} target="_blank" rel="noreferrer">
-        View project
+        { props.linkText ? props.linkText : "View project" }
       </a>
     </div>
   ) : (

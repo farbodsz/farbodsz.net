@@ -9,6 +9,8 @@ langs:
   - SQLite
 imgSrc: ../images/pokedata.png
 github: https://github.com/farbodsz/PokedexApp
+link: https://github.com/farbodsz/PokedexApp/releases/download/v4.1.1/pokedex-v411-paid.apk
+linkText: Download APK
 featured: true
 ---
 

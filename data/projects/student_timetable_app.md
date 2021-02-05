@@ -9,6 +9,8 @@ langs:
   - SQLite
 imgSrc: ../images/timetable.png
 github: https://github.com/farbodsz/TimetableApp
+link: https://github.com/farbodsz/TimetableApp/releases/download/v1.2.2/timetable-v122.apk
+linkText: Download APK
 featured: true
 ---
 
