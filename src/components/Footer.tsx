@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import Layout from "./Layout";
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <footer className={styles.footer}>
       <Layout>

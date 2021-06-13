@@ -9,12 +9,12 @@ import Skills from "../sections/skills";
 import OtherProjects from "../sections/otherProjects";
 import FeaturedProjects from "../sections/featuredProjects";
 
-import favicon from "../icons/favicons/favicon.ico";
-import iconApple from "../icons/favicons/apple-touch-icon.png";
-import icon16 from "../icons/favicons/favicon-16x16.png";
-import icon32 from "../icons/favicons/favicon-32x32.png";
+import favicon from "../assets/favicons/favicon.ico";
+import iconApple from "../assets/favicons/apple-touch-icon.png";
+import icon16 from "../assets/favicons/favicon-16x16.png";
+import icon32 from "../assets/favicons/favicon-32x32.png";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const NAME = "Farbod Salamat-Zadeh";
   const DESC =
     "Hi, my name is " +
