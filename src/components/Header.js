@@ -3,12 +3,12 @@ import styles from "./Header.module.scss";
 
 import Layout from "./Layout";
 
-import iconGithub from "../icons/github.svg";
-import iconSO from "../icons/so.svg";
-import iconLinkedin from "../icons/linkedin.svg";
-import iconGithubActive from "../icons/github_active.svg";
-import iconSOActive from "../icons/so_active.svg";
-import iconLinkedinActive from "../icons/linkedin_active.svg";
+import iconGithub from "../assets/github.svg";
+import iconSO from "../assets/so.svg";
+import iconLinkedin from "../assets/linkedin.svg";
+import iconGithubActive from "../assets/github_active.svg";
+import iconSOActive from "../assets/so_active.svg";
+import iconLinkedinActive from "../assets/linkedin_active.svg";
 
 const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
