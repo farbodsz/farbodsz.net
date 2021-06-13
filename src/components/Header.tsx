@@ -13,11 +13,22 @@ import iconLinkedinActive from "../assets/linkedin_active.svg";
 const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
 const LINK_LINKEDIN = "https://www.linkedin.com/in/farbodsz/";
-
 const LINK_WARWICK_DCS = "https://warwick.ac.uk/fac/sci/dcs/";
 
-class ProfileChip extends React.Component {
-  constructor(props) {
+type ProfileChipProps = {
+  index: number;
+  icon?: string;
+  iconActive?: string;
+  text: string;
+  link: string;
+};
+
+type ProfileChipState = {
+  active: boolean;
+};
+
+class ProfileChip extends React.Component<ProfileChipProps, ProfileChipState> {
+  constructor(props: ProfileChipProps) {
     super(props);
     this.state = { active: false };
   }
@@ -49,7 +60,7 @@ class ProfileChip extends React.Component {
   }
 }
 
-const Intro = () => (
+const Intro = (): JSX.Element => (
   <div className={styles.introContainer}>
     <p className={styles.tagline}>
       Hi, my name is Farbod.{" "}
@@ -71,7 +82,7 @@ const Intro = () => (
   </div>
 );
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <header className={styles.headerContainer}>
       <Layout>
