@@ -10,7 +10,10 @@ const query = graphql`
   query OtherProjectsQuery {
     allMarkdownRemark(
       filter: { frontmatter: { featured: { ne: true } } }
-      sort: { fields: frontmatter___endYear, order: DESC }
+      sort: {
+        fields: [frontmatter___endYear, frontmatter___startYear]
+        order: [DESC, DESC]
+      }
     ) {
       nodes {
         html
