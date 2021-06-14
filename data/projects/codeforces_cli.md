@@ -1,9 +1,10 @@
 ---
 title: Codeforces CLI
-startYear: 2020
+startYear: 2021
 langs:
-  - Python
+  - Haskell
+github: https://github.com/farbodsz/codeforces-cli/
 ---
 
-A command-line interface to access stats from
+A command-line interface to interact with the competitive programming site
 [Codeforces](https://codeforces.com/).
