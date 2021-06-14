@@ -81,7 +81,7 @@ export default class ProjectItem extends React.Component<ProjectItemProps> {
     const githubButton = props.github ? (
       <div className={styles.button}>
         <a href={props.github} target="_blank" rel="noreferrer">
-          View GitHub repo
+          View on GitHub
         </a>
       </div>
     ) : (
