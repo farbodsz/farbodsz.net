@@ -5,6 +5,9 @@
   flex-direction: row;
   justify-content: space-around;
 
+  // Prevent rows spreading across total height, align them to top of flexbox
+  align-items: flex-start;
+
   padding-bottom: $padding-section;
 }
 
