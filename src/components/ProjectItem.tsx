@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./ProjectItem.module.scss";
 
+import LanguageDot from "./LanguageDot";
+
 import Img from "gatsby-image";
 import { FluidObject } from "gatsby-image";
 
@@ -42,7 +44,7 @@ type ProjectItemProps = {
   title: string;
   startYear?: number;
   endYear?: number;
-  langs?: [string];
+  langs: [string];
   imgSrc: FluidObject;
   github?: string;
   link?: string;
@@ -62,7 +64,7 @@ export default class ProjectItem extends React.Component<ProjectItemProps> {
     const miniItem = !props.imgSrc;
     const hasYears = props.startYear || props.endYear;
 
-    const subtitleText = props.langs ? formatLangs(props.langs) : null;
+    const subtitleText = formatLangs(props.langs);
     var subtitleElement = <></>;
 
     if (subtitleText || hasYears) {
@@ -71,6 +73,7 @@ export default class ProjectItem extends React.Component<ProjectItemProps> {
       const yearsText = formatYears(props.startYear, props.endYear);
       subtitleElement = (
         <h4 className={styles.subtitle}>
+          <LanguageDot langName={props.langs[0]} />
           {subtitleText}
           {space}
           <span className={styles.years}>{yearsText}</span>
