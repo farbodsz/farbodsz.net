@@ -1,16 +1,13 @@
 @import "../styles/colors";
+@import "../styles/dimens";
 @import "../styles/fonts";
 
 .footer {
-  background-color: $color-background-dark;
+  background-color: $color-primary;
+  padding-bottom: 50px;
 }
 
 .text {
   font-family: $fonts-code;
   font-size: $font-size-small;
-  color: $color-text-white;
-
-  a {
-    color: $color-accent-light;
-  }
 }

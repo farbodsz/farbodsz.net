@@ -3,7 +3,10 @@
 @import "../styles/fonts";
 
 .headerContainer {
-  min-height: 100vh;
+  display: block;
+  min-height: 65vh;
+
+  background-color: $color-primary;
 }
 
 .linksContainer {
@@ -14,6 +17,13 @@
 .profileChip {
   display: inline-block;
   padding: 0 5px;
+
+  // It's an <a> so prevent it having the default link color
+  color: $color-text;
+
+  &:hover {
+    filter: $color-accent-filter;
+  }
 }
 
 .profileIcon {
@@ -27,21 +37,14 @@
 
 .profileLabel {
   font-size: $font-size-small;
-
-  // Don't show in link color by default
-  color: $color-text;
-  &:hover {
-    color: $color-accent;
-  }
 }
 
 .introContainer {
   font-size: 1.2em;
-  padding-bottom: $padding-section;
 }
 
 .tagline {
-  font-weight: $font-weight-heading;
+  font-weight: $font-weight-tagline;
   font-size: 1.2em;
   padding-bottom: 80px;
 }

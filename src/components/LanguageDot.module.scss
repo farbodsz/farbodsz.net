@@ -1,0 +1,10 @@
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+
+  $size: 0.9rem;
+  height: $size;
+  width: $size;
+
+  margin: auto 0.5rem;
+}

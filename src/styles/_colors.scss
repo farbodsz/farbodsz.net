@@ -6,9 +6,13 @@ $color-text-lighter: #757575;
 
 $color-text-white: #f8f9fd;
 
-$color-primary: #37474f;
-$color-primary-dark: #102027;
-$color-primary-light: #62727b;
+// Material Blue Grey 100
+$color-primary: #cfd8dc;
 
 $color-accent: #01579b;
 $color-accent-light: #4f83cc;
+
+// CSS filter from black to $color-accent
+// See https://tests.christianoliff.com/hex-to-css-filter-generator/
+$color-accent-filter: invert(20%) sepia(99%) saturate(1490%) hue-rotate(188deg)
+  brightness(97%) contrast(99%);
