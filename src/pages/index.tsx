@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import { WaveHeader, WaveFooter } from "../components/Waves";
 
+import Experience from "../sections/experience";
 import Skills from "../sections/skills";
 import OtherProjects from "../sections/otherProjects";
 import FeaturedProjects from "../sections/featuredProjects";
@@ -40,6 +41,7 @@ export default function Home(): JSX.Element {
       <WaveHeader />
 
       <Layout>
+        <Experience />
         <Skills />
         <FeaturedProjects />
         <OtherProjects />

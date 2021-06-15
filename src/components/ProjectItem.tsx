@@ -37,7 +37,7 @@ export default class ProjectItem extends React.Component<ProjectItemProps> {
     if (subtitleText || hasYears) {
       const space = miniItem ? <br /> : " ";
 
-      const yearsText = formatYears(props.startYear, props.endYear);
+      const yearsText = formatYears(props.startYear, props.endYear, true);
       subtitleElement = (
         <h4 className={styles.subtitle}>
           <LanguageDot langName={props.langs[0]} />

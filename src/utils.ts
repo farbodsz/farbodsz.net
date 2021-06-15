@@ -12,17 +12,28 @@ const SEP_YEARS: string = "–";
  * the present. If end year is given but no start year, then it will be assumed
  * they are in the same year.
  */
-export function formatYears(startYear?: number, endYear?: number): string {
+export function formatYears(
+  startYear: number | undefined,
+  endYear: number | undefined,
+  useParentheses: boolean
+): string {
   if (startYear) {
     var endYearText = endYear
       ? `'${endYear.toString().substring(2)}`
       : "present";
-    return `(${startYear}${SEP_YEARS}${endYearText})`;
+    return withParentheses(
+      `${startYear}${SEP_YEARS}${endYearText}`,
+      useParentheses
+    );
   } else if (endYear) {
-    return `(${endYear})`;
+    return withParentheses(`${endYear}`, useParentheses);
   } else {
     return "";
   }
+}
+
+function withParentheses(text: string, useParentheses: boolean): string {
+  return useParentheses ? `(${text})` : text;
 }
 
 /**
