@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "./Layout.module.scss";
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
-
-const Layout: React.FunctionComponent<LayoutProps> = (props) => (
-  <div className={styles.layout}>{props.children}</div>
+const Layout = (props) => (
+  <div className={styles.layout} {...props}>
+    {props.children}
+  </div>
 );
 
 export default Layout;

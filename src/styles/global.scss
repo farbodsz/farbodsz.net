@@ -28,13 +28,17 @@ h5 {
   font-weight: $font-weight-heading;
 }
 
+// Section headings
 h2 {
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   width: 100%;
   text-align: center;
 
-  font-size: 1em;
-  color: $color-accent;
+  font-family: $fonts-body;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: $color-primary-dark;
   text-transform: uppercase;
 
   letter-spacing: 0.15em;

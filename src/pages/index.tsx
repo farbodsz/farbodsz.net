@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
       <Header />
       <WaveHeader />
 
-      <Layout>
+      <Layout style={{ marginTop: "-100px" }}>
         <Experience />
         <Skills />
         <FeaturedProjects />
