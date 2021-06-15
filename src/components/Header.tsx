@@ -6,9 +6,6 @@ import Layout from "./Layout";
 import iconGithub from "../assets/github.svg";
 import iconSO from "../assets/so.svg";
 import iconLinkedin from "../assets/linkedin.svg";
-import iconGithubActive from "../assets/github_active.svg";
-import iconSOActive from "../assets/so_active.svg";
-import iconLinkedinActive from "../assets/linkedin_active.svg";
 
 const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
@@ -17,45 +14,32 @@ const LINK_WARWICK_DCS = "https://warwick.ac.uk/fac/sci/dcs/";
 
 type ProfileChipProps = {
   index: number;
-  icon?: string;
-  iconActive?: string;
+  icon: string;
   text: string;
   link: string;
 };
 
-type ProfileChipState = {
-  active: boolean;
-};
-
-class ProfileChip extends React.Component<ProfileChipProps, ProfileChipState> {
+class ProfileChip extends React.Component<ProfileChipProps> {
   constructor(props: ProfileChipProps) {
     super(props);
-    this.state = { active: false };
   }
 
   render() {
     return (
-      <span
+      <a
         className={styles.profileChip}
-        onMouseEnter={() => this.setState({ active: true })}
-        onMouseLeave={() => this.setState({ active: false })}
-        role="button"
         tabIndex={this.props.index}
+        href={this.props.link}
+        target="_blank"
+        rel="noreferrer"
       >
         <img
           className={styles.profileIcon}
-          src={this.state.active ? this.props.iconActive : this.props.icon}
+          src={this.props.icon}
           alt={this.props.text}
         />
-        <a
-          className={styles.profileLabel}
-          href={this.props.link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {this.props.text}
-        </a>
-      </span>
+        <span className={styles.profileLabel}>{this.props.text}</span>
+      </a>
     );
   }
 }
@@ -91,7 +75,6 @@ export default function Header(): JSX.Element {
           <ProfileChip
             text="GitHub"
             icon={iconGithub}
-            iconActive={iconGithubActive}
             link={LINK_GITHUB}
             index={0}
           />
@@ -99,7 +82,6 @@ export default function Header(): JSX.Element {
           <ProfileChip
             text="Stack Overflow"
             icon={iconSO}
-            iconActive={iconSOActive}
             link={LINK_SO}
             index={1}
           />
@@ -107,7 +89,6 @@ export default function Header(): JSX.Element {
           <ProfileChip
             text="LinkedIn"
             icon={iconLinkedin}
-            iconActive={iconLinkedinActive}
             link={LINK_LINKEDIN}
             index={2}
           />
