@@ -18,11 +18,7 @@ import icon32 from "../assets/favicons/favicon-32x32.png";
 
 export default function Home(): JSX.Element {
   const NAME = "Farbod Salamat-Zadeh";
-  const DESC =
-    "Hi, my name is " +
-    NAME +
-    ". I'm currently a second year " +
-    "Computer Science student at the University of Warwick,";
+  const DESC = "Personal website";
 
   return (
     <>
@@ -40,7 +36,7 @@ export default function Home(): JSX.Element {
       <Header />
       <WaveHeader />
 
-      <Layout style={{ marginTop: "-100px" }}>
+      <Layout style={{ marginTop: "-120px" }}>
         <Experience />
         <Skills />
         <FeaturedProjects />

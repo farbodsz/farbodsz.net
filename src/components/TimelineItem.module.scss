@@ -10,6 +10,14 @@
 .textContainer {
   flex: 50%;
   padding-bottom: $padding-section;
+
+  p {
+    padding-bottom: 30px;
+    text-align: justify;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .header {
