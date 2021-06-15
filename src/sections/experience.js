@@ -7,9 +7,7 @@ import TimelineItem from "../components/TimelineItem";
 const query = graphql`
   query ExperienceQuery {
     allMarkdownRemark(
-      filter: {
-        fields: { collection: { eq: "experience" } }
-      }
+      filter: { fields: { collection: { eq: "experience" } } }
       sort: { fields: frontmatter___startYear, order: DESC }
     ) {
       nodes {

@@ -47,23 +47,15 @@
 }
 
 @media (max-width: $breakpoint-width-mobile) {
-  @mixin containerMobile {
-    flex-direction: column;
-
-    & > div:nth-child(1) {
-      padding: 0 20px 20px 20px;
-    }
-  }
-
   .container {
-    @include containerMobile;
-  }
-
-  .containerReverse {
-    @include containerMobile;
+    flex-direction: column;
   }
 
   .lineContainer {
-    margin-bottom: 40px;
+    justify-content: flex-start;
+  }
+
+  .lineGraphic {
+    display: none;
   }
 }
