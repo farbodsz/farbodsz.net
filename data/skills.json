@@ -1,22 +1,14 @@
 [
   {
-    "groupName": "Languages",
-    "items": [
-      "Java",
-      "Kotlin",
-      "Python",
-      "C++",
-      "SQL",
-      "JavaScript",
-      "CSS/Sass"
-    ]
+    "groupName": "JVM",
+    "items": ["Java", "Kotlin", "Android", "Maven/Gradle"]
   },
   {
-    "groupName": "Frameworks",
-    "items": ["Android APIs", "React", "Gatsby", "Node"]
+    "groupName": "Web",
+    "items": ["TypeScript/JavaScript", "React", "Gatsby", "CSS/Sass"]
   },
   {
-    "groupName": "Tools",
-    "items": ["Maven & Gradle", "Bash", "Git & GitHub"]
+    "groupName": "Others",
+    "items": ["Python", "Haskell", "SQL", "Shell/Bash", "Git"]
   }
 ]

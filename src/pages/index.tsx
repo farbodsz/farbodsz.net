@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import { WaveHeader, WaveFooter } from "../components/Waves";
 
+import Experience from "../sections/experience";
 import Skills from "../sections/skills";
 import OtherProjects from "../sections/otherProjects";
 import FeaturedProjects from "../sections/featuredProjects";
@@ -16,14 +18,10 @@ import icon32 from "../assets/favicons/favicon-32x32.png";
 
 export default function Home(): JSX.Element {
   const NAME = "Farbod Salamat-Zadeh";
-  const DESC =
-    "Hi, my name is " +
-    NAME +
-    ". I'm currently a second year " +
-    "Computer Science student at the University of Warwick,";
+  const DESC = "Personal website";
 
   return (
-    <div>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>{NAME} | CS Student</title>
@@ -36,14 +34,17 @@ export default function Home(): JSX.Element {
       </Helmet>
 
       <Header />
+      <WaveHeader />
 
-      <Layout>
+      <Layout style={{ marginTop: "-120px" }}>
+        <Experience />
         <Skills />
         <FeaturedProjects />
         <OtherProjects />
       </Layout>
 
+      <WaveFooter />
       <Footer />
-    </div>
+    </>
   );
 }

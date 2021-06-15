@@ -1,0 +1,13 @@
+.wave {
+  display: block;
+}
+
+.waveHeader {
+  @extend .wave;
+  margin-top: -4px;
+}
+
+.waveFooter {
+  @extend .wave;
+  margin-bottom: -4px;
+}

@@ -39,11 +39,11 @@ $imgLateralPadding: 80px;
 
 .subtitle {
   font-size: 0.9em;
+  line-height: 1.6em;
 }
 
 .years {
   font-style: italic;
-  font-weight: $font-weight-heading;
   color: $color-text-lighter;
 }
 
@@ -55,6 +55,7 @@ $imgLateralPadding: 80px;
 .img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .description {

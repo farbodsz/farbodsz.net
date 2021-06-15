@@ -1,0 +1,21 @@
+<svg width="20px" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient_fade_out" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#01579b" stop-opacity="1" />
+      <stop offset="70%" stop-color="#01579b" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#01579b" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect
+    x="6"
+    y="0"
+    width="8"
+    height="100%"
+    fill="url(#gradient_fade_out)" />
+  <circle
+    cx="10"
+    cy="25"
+    r="10"
+    fill="#01579b" />
+</svg>

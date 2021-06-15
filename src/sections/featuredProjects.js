@@ -7,7 +7,10 @@ import ProjectItem from "../components/ProjectItem";
 const query = graphql`
   query FeaturedProjectsQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { featured: { eq: true } } }
+      filter: {
+        fields: { collection: { eq: "projects" } }
+        frontmatter: { featured: { eq: true } }
+      }
       sort: { fields: frontmatter___endYear, order: DESC }
     ) {
       nodes {

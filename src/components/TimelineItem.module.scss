@@ -1,0 +1,69 @@
+@import "../styles/colors";
+@import "../styles/dimens";
+@import "../styles/fonts";
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.textContainer {
+  flex: 50%;
+  padding-bottom: $padding-section;
+
+  p {
+    padding-bottom: 30px;
+    text-align: justify;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.header {
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: $fonts-body;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+.lineContainer {
+  flex: 50%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lineYears {
+  padding-top: 10px;
+  padding-right: 25px;
+
+  // TODO: below is same as .subtitle in ProjectItem
+  font-family: $fonts-code;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+.lineGraphic {
+  display: block;
+  padding-right: 5em;
+}
+
+@media (max-width: $breakpoint-width-mobile) {
+  .container {
+    flex-direction: column;
+  }
+
+  .lineContainer {
+    justify-content: flex-start;
+  }
+
+  .lineGraphic {
+    display: none;
+  }
+}
