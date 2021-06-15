@@ -1,10 +1,11 @@
 ---
 title: Music Database Project
 startYear: 2019
+endYear: 2020
 langs:
   - Kotlin
   - MySQL
 ---
 
-A website for easily searching classical music by composer, time period, or even
-instrumentation. The music metadata is collected using a web crawler.
+A web crawler to gather and organise classical music metadata. This allows for
+easily searching music by composer, time period, or even instrumentation.

@@ -3,5 +3,6 @@
   { "langName": "Java", "color": "#b07219" },
   { "langName": "JavaScript", "color": "#f1e05a" },
   { "langName": "Kotlin", "color": "#a97bff" },
-  { "langName": "Python", "color": "#3572a5" }
+  { "langName": "Python", "color": "#3572a5" },
+  { "langName": "TypeScript", "color": "#2b7489" }
 ]
