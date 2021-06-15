@@ -10,20 +10,21 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/data/`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "projects",
-        path: `${__dirname}/data/projects/`,
+        path: `${__dirname}/data/projects`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/data/images/`,
+        name: "images",
+        path: `${__dirname}/data/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/data`,
       },
     },
     {

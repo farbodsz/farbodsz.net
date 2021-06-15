@@ -9,7 +9,10 @@ import ProjectItem from "../components/ProjectItem";
 const query = graphql`
   query OtherProjectsQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { featured: { ne: true } } }
+      filter: {
+        fields: { collection: { eq: "projects" } }
+        frontmatter: { featured: { ne: true } }
+      }
       sort: {
         fields: [frontmatter___endYear, frontmatter___startYear]
         order: [DESC, DESC]
