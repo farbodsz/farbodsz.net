@@ -2,15 +2,10 @@
 @import "../styles/fonts";
 
 .footer {
-  background-color: $color-background-dark;
+  background-color: $color-primary;
 }
 
 .text {
   font-family: $fonts-code;
   font-size: $font-size-small;
-  color: $color-text-white;
-
-  a {
-    color: $color-accent-light;
-  }
 }
