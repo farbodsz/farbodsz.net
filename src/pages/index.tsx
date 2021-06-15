@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import { WaveHeader, WaveFooter } from "../components/Waves";
 
 import Skills from "../sections/skills";
 import OtherProjects from "../sections/otherProjects";
@@ -23,7 +24,7 @@ export default function Home(): JSX.Element {
     "Computer Science student at the University of Warwick,";
 
   return (
-    <div>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>{NAME} | CS Student</title>
@@ -36,6 +37,7 @@ export default function Home(): JSX.Element {
       </Helmet>
 
       <Header />
+      <WaveHeader />
 
       <Layout>
         <Skills />
@@ -43,7 +45,8 @@ export default function Home(): JSX.Element {
         <OtherProjects />
       </Layout>
 
+      <WaveFooter />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -3,7 +3,8 @@
 @import "../styles/fonts";
 
 .headerContainer {
-  min-height: 100vh;
+  display: block;
+  min-height: 65vh;
 
   background-color: $color-primary;
 }
@@ -40,7 +41,6 @@
 
 .introContainer {
   font-size: 1.2em;
-  padding-bottom: $padding-section;
 }
 
 .tagline {
