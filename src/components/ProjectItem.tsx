@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProjectItem.module.scss";
+import * as styles from "./ProjectItem.module.scss";
 
 import LanguageDot from "./LanguageDot";
 import { formatLangs, formatYears } from "../utils";

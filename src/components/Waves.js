@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Waves.module.scss";
+import * as styles from "./Waves.module.scss";
 
 import svgWaveHeader from "../assets/wave_header.svg";
 import svgWaveFooter from "../assets/wave_footer.svg";

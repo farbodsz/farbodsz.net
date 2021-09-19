@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.scss";
+import * as styles from "./Header.module.scss";
 
 import Layout from "./Layout";
 

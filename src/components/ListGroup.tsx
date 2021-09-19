@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ListGroup.module.scss";
+import * as styles from "./ListGroup.module.scss";
 
 type ListGroupProps = {
   groupName: string;

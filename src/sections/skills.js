@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import styles from "./skills.module.scss";
+import * as styles from "./skills.module.scss";
 
 import ListGroup from "../components/ListGroup";
 import Section from "../components/Section";

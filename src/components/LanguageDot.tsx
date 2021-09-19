@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import styles from "./LanguageDot.module.scss";
+import * as styles from "./LanguageDot.module.scss";
 
 /*
  * Language type and query

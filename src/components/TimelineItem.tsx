@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TimelineItem.module.scss";
+import * as styles from "./TimelineItem.module.scss";
 
 import { formatYears } from "../utils";
 
