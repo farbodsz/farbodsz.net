@@ -1,9 +1,9 @@
 import React from "react";
 import * as styles from "./ListGroup.module.scss";
 
-type ListGroupProps = {
+interface ListGroupProps {
   groupName: string;
-  items: [JSX.Element];
+  items: JSX.Element[];
 };
 
 export default class ListGroup extends React.Component<ListGroupProps> {

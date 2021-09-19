@@ -7,7 +7,7 @@ import svgTimeline from "../assets/timeline_line.svg";
 import svgTimelineStart from "../assets/timeline_line_start.svg";
 import svgTimelineEnd from "../assets/timeline_line_end.svg";
 
-type TimelineItemProps = {
+interface TimelineItemProps {
   title: string;
   subtitle: string;
   startYear?: number;

@@ -1,6 +1,6 @@
 import React from "react";
 
-type SectionProps = {
+interface SectionProps {
   title: string;
   children: React.ReactNode;
 };

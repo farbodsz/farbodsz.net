@@ -7,7 +7,7 @@ import { formatLangs, formatYears } from "../utils";
 import Img from "gatsby-image";
 import { FluidObject } from "gatsby-image";
 
-type ProjectItemProps = {
+interface ProjectItemProps {
   title: string;
   startYear?: number;
   endYear?: number;
@@ -17,7 +17,6 @@ type ProjectItemProps = {
   link?: string;
   linkText?: string;
   imgRight: boolean;
-  children: React.ReactNode;
 };
 
 export default class ProjectItem extends React.Component<ProjectItemProps> {

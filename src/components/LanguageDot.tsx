@@ -7,7 +7,7 @@ import * as styles from "./LanguageDot.module.scss";
  * Language type and query
  */
 
-type Language = {
+interface Language {
   langName: string;
   color: string;
 };
@@ -27,7 +27,7 @@ const query = graphql`
  * LanguageDot component
  */
 
-type LanguageDotProps = {
+interface LanguageDotProps {
   langName: string;
 };
 

@@ -12,7 +12,7 @@ const LINK_SO = "https://stackoverflow.com/users/4230345/";
 const LINK_LINKEDIN = "https://www.linkedin.com/in/farbodsz/";
 const LINK_WARWICK_DCS = "https://warwick.ac.uk/fac/sci/dcs/";
 
-type ProfileChipProps = {
+interface ProfileChipProps {
   index: number;
   icon: string;
   text: string;
