@@ -39,6 +39,6 @@ function withParentheses(text: string, useParentheses: boolean): string {
 /**
  * Returns a string representing the list of programming languages.
  */
-export function formatLangs(langs: [string]): string {
+export function formatLangs(langs: string[]): string {
   return langs.join(" | ");
 }

@@ -1,10 +1,12 @@
 ---
 title: Codeforces CLI
-startYear: 2021
+endYear: 2021
 langs:
   - Haskell
 imgSrc: ../images/codeforces_cli.png
 github: https://github.com/farbodsz/codeforces-cli/
+link: https://hackage.haskell.org/package/codeforces-cli
+linkText: View on Hackage
 featured: true
 ---
 
