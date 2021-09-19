@@ -1,20 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Layout from "../components/Layout";
-import { WaveHeader, WaveFooter } from "../components/Waves";
-
-import Experience from "../sections/experience";
-import Skills from "../sections/skills";
-import OtherProjects from "../sections/otherProjects";
-import FeaturedProjects from "../sections/featuredProjects";
-
-import favicon from "../assets/favicons/favicon.ico";
 import iconApple from "../assets/favicons/apple-touch-icon.png";
 import icon16 from "../assets/favicons/favicon-16x16.png";
 import icon32 from "../assets/favicons/favicon-32x32.png";
+import favicon from "../assets/favicons/favicon.ico";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Layout from "../components/Layout";
+import { WaveFooter, WaveHeader } from "../components/Waves";
+import Experience from "../sections/experience";
+import FeaturedProjects from "../sections/featuredProjects";
+import OtherProjects from "../sections/otherProjects";
+import Skills from "../sections/skills";
 
 export default function Home(): JSX.Element {
   const NAME = "Farbod Salamat-Zadeh";

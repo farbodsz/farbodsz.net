@@ -1,11 +1,10 @@
-import React from "react";
-import * as styles from "./ProjectItem.module.scss";
-
-import LanguageDot from "./LanguageDot";
-import { formatLangs, formatYears } from "../utils";
-
 import Img from "gatsby-image";
 import { FluidObject } from "gatsby-image";
+import React from "react";
+
+import { formatLangs, formatYears } from "../utils";
+import LanguageDot from "./LanguageDot";
+import * as styles from "./ProjectItem.module.scss";
 
 interface ProjectItemProps {
   title: string;
@@ -17,7 +16,7 @@ interface ProjectItemProps {
   link?: string;
   linkText?: string;
   imgRight: boolean;
-};
+}
 
 export default class ProjectItem extends React.Component<ProjectItemProps> {
   constructor(props: ProjectItemProps) {

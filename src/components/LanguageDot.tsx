@@ -1,5 +1,5 @@
-import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import React from "react";
 
 import * as styles from "./LanguageDot.module.scss";
 
@@ -10,7 +10,7 @@ import * as styles from "./LanguageDot.module.scss";
 interface Language {
   langName: string;
   color: string;
-};
+}
 
 const query = graphql`
   query LanguageQuery {
@@ -29,7 +29,7 @@ const query = graphql`
 
 interface LanguageDotProps {
   langName: string;
-};
+}
 
 const LanguageDot: React.FunctionComponent<LanguageDotProps> = (props) => (
   <StaticQuery

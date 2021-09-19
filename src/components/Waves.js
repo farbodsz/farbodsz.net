@@ -1,8 +1,8 @@
 import React from "react";
-import * as styles from "./Waves.module.scss";
 
-import svgWaveHeader from "../assets/wave_header.svg";
 import svgWaveFooter from "../assets/wave_footer.svg";
+import svgWaveHeader from "../assets/wave_header.svg";
+import * as styles from "./Waves.module.scss";
 
 export const WaveHeader = (props) => (
   <img

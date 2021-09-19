@@ -1,8 +1,8 @@
-import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import React from "react";
 
-import Section from "../components/Section";
 import ProjectItem from "../components/ProjectItem";
+import Section from "../components/Section";
 
 const query = graphql`
   query FeaturedProjectsQuery {

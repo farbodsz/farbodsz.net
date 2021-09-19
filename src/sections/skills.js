@@ -1,10 +1,9 @@
-import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-
-import * as styles from "./skills.module.scss";
+import React from "react";
 
 import ListGroup from "../components/ListGroup";
 import Section from "../components/Section";
+import * as styles from "./skills.module.scss";
 
 const query = graphql`
   query SkillsQuery {

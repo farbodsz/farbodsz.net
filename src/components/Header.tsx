@@ -1,11 +1,10 @@
 import React from "react";
-import * as styles from "./Header.module.scss";
-
-import Layout from "./Layout";
 
 import iconGithub from "../assets/github.svg";
-import iconSO from "../assets/so.svg";
 import iconLinkedin from "../assets/linkedin.svg";
+import iconSO from "../assets/so.svg";
+import * as styles from "./Header.module.scss";
+import Layout from "./Layout";
 
 const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
@@ -17,7 +16,7 @@ interface ProfileChipProps {
   icon: string;
   text: string;
   link: string;
-};
+}
 
 class ProfileChip extends React.Component<ProfileChipProps> {
   constructor(props: ProfileChipProps) {

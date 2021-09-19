@@ -1,11 +1,10 @@
 import React from "react";
-import * as styles from "./TimelineItem.module.scss";
 
-import { formatYears } from "../utils";
-
-import svgTimeline from "../assets/timeline_line.svg";
-import svgTimelineStart from "../assets/timeline_line_start.svg";
 import svgTimelineEnd from "../assets/timeline_line_end.svg";
+import svgTimelineStart from "../assets/timeline_line_start.svg";
+import svgTimeline from "../assets/timeline_line.svg";
+import { formatYears } from "../utils";
+import * as styles from "./TimelineItem.module.scss";
 
 interface TimelineItemProps {
   title: string;
@@ -14,7 +13,7 @@ interface TimelineItemProps {
   endYear?: number;
   isFirst: boolean;
   isLast: boolean;
-};
+}
 
 export default class TimelineItem extends React.Component<TimelineItemProps> {
   constructor(props: TimelineItemProps) {

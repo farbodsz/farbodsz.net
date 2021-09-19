@@ -3,7 +3,7 @@ import React from "react";
 interface SectionProps {
   title: string;
   children: React.ReactNode;
-};
+}
 
 const Section: React.FunctionComponent<SectionProps> = (props) => (
   <div>

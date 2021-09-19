@@ -1,5 +1,5 @@
-import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import React from "react";
 
 import Section from "../components/Section";
 import TimelineItem from "../components/TimelineItem";
