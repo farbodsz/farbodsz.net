@@ -83,7 +83,7 @@ export default class ProjectItem extends React.Component<ProjectItemProps> {
           {subtitleElement}
         </div>
         {props.children}
-        <div className={styles.buttonContainer}>
+        <div>
           {linkButton} {githubButton}
         </div>
       </div>
