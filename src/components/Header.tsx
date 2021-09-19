@@ -52,7 +52,7 @@ const Intro = (): JSX.Element => (
       </span>
     </p>
     <p style={{ paddingBottom: "30px" }}>
-      I'm currently a 2nd year Computer Science student at the{" "}
+      I'm currently a final year Computer Science BSc student at the{" "}
       <a href={LINK_WARWICK_DCS} target="_blank" rel="noreferrer">
         University of Warwick
       </a>

@@ -9,14 +9,11 @@
 
 .textContainer {
   flex: 50%;
-  padding-bottom: $padding-section;
+  padding-bottom: 50px;
 
   p {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: justify;
-    &:last-child {
-      padding-bottom: 0;
-    }
   }
 }
 

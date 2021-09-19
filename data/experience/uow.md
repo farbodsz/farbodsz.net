@@ -7,5 +7,4 @@ endYear: 2022
 
 Expected graduation: July 2022.
 
-Optional modules I took include Functional Programming, Web Development and
-German.
+Optional modules include Functional Programming, Web Development and German.
