@@ -8,7 +8,7 @@ const query = graphql`
   query ExperienceQuery {
     allMarkdownRemark(
       filter: { fields: { collection: { eq: "experience" } } }
-      sort: { fields: frontmatter___startYear, order: DESC }
+      sort: { fields: frontmatter___endYear, order: DESC }
     ) {
       nodes {
         html
