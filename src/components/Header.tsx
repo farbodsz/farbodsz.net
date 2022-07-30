@@ -9,7 +9,7 @@ import Layout from "./Layout";
 const LINK_GITHUB = "https://github.com/farbodsz/";
 const LINK_SO = "https://stackoverflow.com/users/4230345/";
 const LINK_LINKEDIN = "https://www.linkedin.com/in/farbodsz/";
-const LINK_WARWICK_DCS = "https://warwick.ac.uk/fac/sci/dcs/";
+const LINK_WORK = "https://www.squarepoint-capital.com/";
 
 interface ProfileChipProps {
   index: number;
@@ -52,9 +52,9 @@ const Intro = (): JSX.Element => (
       </span>
     </p>
     <p style={{ paddingBottom: "30px" }}>
-      I'm currently a final year Computer Science BSc student at the{" "}
-      <a href={LINK_WARWICK_DCS} target="_blank" rel="noreferrer">
-        University of Warwick
+      I'm currently a Software Engineer at{" "}
+      <a href={LINK_WORK} target="_blank" rel="noreferrer">
+        Squarepoint Capital
       </a>
       .{" "}
       <span className={styles.laptop} role="img" aria-label="laptop">
