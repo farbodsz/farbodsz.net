@@ -1,5 +1,6 @@
 ---
 title: Stock Trading Game
+startYear: 2020
 endYear: 2020
 langs:
   - JavaScript

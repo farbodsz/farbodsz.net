@@ -1,5 +1,6 @@
 ---
 title: Codeforces CLI
+startYear: 2021
 endYear: 2021
 langs:
   - Haskell

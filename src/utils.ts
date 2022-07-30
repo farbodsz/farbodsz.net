@@ -17,19 +17,21 @@ export function formatYears(
   endYear: number | undefined,
   useParentheses: boolean
 ): string {
-  if (startYear) {
-    var endYearText = endYear
-      ? `'${endYear.toString().substring(2)}`
-      : "present";
-    return withParentheses(
-      `${startYear}${SEP_YEARS}${endYearText}`,
-      useParentheses
-    );
-  } else if (endYear) {
-    return withParentheses(`${endYear}`, useParentheses);
-  } else {
+  if (!startYear) {
+    console.warn("No startYear found.");
     return "";
   }
+
+  const endYearText = endYear
+    ? `'${endYear.toString().substring(2)}`
+    : "present";
+
+  const yearRangeText =
+    startYear === endYear
+      ? startYear.toString()
+      : `${startYear}${SEP_YEARS}${endYearText}`;
+
+  return withParentheses(yearRangeText, useParentheses);
 }
 
 function withParentheses(text: string, useParentheses: boolean): string {
