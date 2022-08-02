@@ -25,3 +25,12 @@ jobs:
         run: |
           yarn install
           yarn build
+
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Prettier
+        run: |
+          yarn prettier --check ./src/
