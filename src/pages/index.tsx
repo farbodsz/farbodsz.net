@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{NAME} | CS Student</title>
+        <title>{NAME} | Software Engineer</title>
         <meta name="author" content={NAME} />
         <meta name="description" content={DESC} />
         <link rel="icon" href={favicon} />
