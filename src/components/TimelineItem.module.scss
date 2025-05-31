@@ -12,8 +12,21 @@
   padding-bottom: 50px;
 
   p {
-    padding-bottom: 20px;
-    text-align: justify;
+    padding-bottom: 8px;
+  }
+
+  ul {
+    margin-bottom: 8px;
+  }
+
+  p, li {
+    font-size: 0.9em;
+    text-align: start;
+  } 
+
+  ul li {
+    list-style-position: outside;
+    margin-left: 1em;
   }
 }
 

@@ -1,14 +1,10 @@
 [
   {
-    "groupName": "JVM",
-    "items": ["Java", "Kotlin", "Android", "Maven/Gradle"]
+    "groupName": "Backend",
+    "items": ["Python", "PostgreSQL", "Haskell", "C++", "Shell"]
   },
   {
-    "groupName": "Web",
-    "items": ["TypeScript/JavaScript", "React", "Gatsby", "CSS/Sass"]
-  },
-  {
-    "groupName": "Others",
-    "items": ["Python", "Haskell", "SQL", "Shell/Bash", "Git"]
+    "groupName": "Tools",
+    "items": ["Git", "Kubernetes", "Helm", "Prometheus", "Grafana"]
   }
 ]

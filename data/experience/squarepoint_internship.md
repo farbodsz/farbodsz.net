@@ -5,10 +5,7 @@ startYear: 2021
 endYear: 2021
 ---
 
-Improved scoring of results in an internal search algorithm which averages 50k
-daily requests.
-
-As part of this process, researched and built a Python ETL job, before deploying
-as a Kubernetes CronJob.
-
-Outcome was a 89% improvement in search result scores.
+<ul>
+<li>Improved rankings of an internal search system by 89%</li>
+<li>Created new ETL pipelines to store heuristics</li>
+</ul>
