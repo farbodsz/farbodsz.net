@@ -32,4 +32,4 @@ jobs:
     steps:
       - name: Prettier
         run: |
-          yarn prettier --check ./src/
+          yarn prettier --check .
