@@ -21,7 +21,6 @@ jobs:
 
       - name: Build
         run: |
-          export NODE_OPTIONS=--openssl-legacy-provider yarn start
           yarn install
           yarn build
 
