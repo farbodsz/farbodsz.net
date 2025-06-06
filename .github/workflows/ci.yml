@@ -25,11 +25,7 @@ jobs:
           yarn install
           yarn build
 
-  format:
-    name: Format
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-      - name: Prettier
+      - name: Format
         run: |
           yarn prettier --check .
+          yarn build
