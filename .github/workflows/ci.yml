@@ -28,4 +28,3 @@ jobs:
       - name: Format
         run: |
           yarn prettier --check .
-          yarn build
