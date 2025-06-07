@@ -7,10 +7,14 @@
 
 @media (max-width: $breakpoint-width) {
   .table {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 
-  .groupName {
-    width: 45%;
+  .groupName > * {
+    display: block;
+    text-align: end;
+    width: 100px;
   }
 }

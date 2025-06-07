@@ -46,7 +46,7 @@ class ProfileChip extends React.Component<ProfileChipProps> {
 const Intro = (): JSX.Element => (
   <div className={styles.introContainer}>
     <p className={styles.tagline}>
-      Hi, my name is Farbod.{" "}
+      Hey, I'm Farbod.{" "}
       <span className={styles.wave} role="img" aria-label="wave">
         👋
       </span>
